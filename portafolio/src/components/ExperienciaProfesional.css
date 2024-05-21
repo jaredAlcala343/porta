@@ -1,0 +1,85 @@
+.experiencia h2 {
+    margin-top: 90px;
+    text-align: center; /* Centra el texto */
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px auto; /* Ajusta el margen para centrar verticalmente */
+  }
+  
+  .container .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: white; /* Fondo blanco */
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Oculta el contenido desbordante */
+    transition: transform 0.5s; /* Añade la animación de levantarse */
+  }
+  
+  .container .card:hover {
+    transform: translateY(-20px); /* Mueve la tarjeta hacia arriba */
+  }
+  
+  .container .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .container .card .content .imgBx {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+  }
+  
+  .container .card .content .imgBx img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .container .card .content .contentBx {
+    text-align: center; /* Centra el contenido */
+  }
+  
+  .container .card .content .contentBx h3 {
+    color: #555; /* Cambia el color del texto */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 20px 0 40px;
+    line-height: 1.1em;
+  }
+  
+  .container .card .content .contentBx h3 span {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+  }
+  
+  .container .card .sci {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    justify-content: center; /* Centra los iconos horizontalmente */
+  }
+  

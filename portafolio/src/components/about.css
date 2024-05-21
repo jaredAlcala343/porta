@@ -1,0 +1,68 @@
+@keyframes neon {
+    0% {
+      box-shadow: 0px 0px 20px rgba(121, 1, 105, 0.5);
+    }
+    50% {
+      box-shadow: 0px 0px 40px rgba(160, 3, 139, 0.9);
+    }
+    100% {
+      box-shadow: 0px 0px 20px rgba(119, 2, 74, 0.5);
+    }
+  }
+  
+  .about-me {
+    padding: 70px;
+    background: linear-gradient(45deg, #f6f6f6, #e9e9e9);
+    border-radius: 20px;
+    max-width: 500px; /* Ajusta el ancho máximo según sea necesario */
+    text-align: center; /* Centra el texto en el contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 640px;
+    margin-top: 20px;
+    position: relative; /* Agregamos posición relativa para el efecto de luz */
+    overflow: hidden; /* Ocultamos el overflow para el efecto de luz */
+    animation: neon 2s infinite alternate; /* Aplicamos la animación de neon */
+  }
+  
+  .about-me-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-pic-Am {
+    width: 350px;
+    height: 450px;
+    margin-bottom: 20px; /* Agrega espacio entre la imagen y el texto */
+    border-radius: 20px;
+  }
+  
+  .about-me-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .about-me-text p {
+    font-size: 16px;
+    color: #555;
+    text-align: center; /* Alinea el texto al centro */
+    margin-bottom: 20px;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center; /* Centra los enlaces horizontalmente */
+  }
+  
+  .social-links a {
+    color: #555;
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .social-links a:hover {
+    color: #333;
+  }
+  

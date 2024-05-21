@@ -1,0 +1,73 @@
+/* src/components/Projects.css */
+.projects {
+    padding: 20px;
+  }
+  
+  .project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .project-img {
+    width: 200px; /* Ajusta el tamaño según sea necesario */
+    margin-right: 20px;
+    transition: transform 0.3s ease; /* Agrega una transición de 0.3 segundos */
+  }
+  
+  .project-img:hover {
+    transform: scale(1.1); /* Escala la imagen al 110% en hover */
+  }
+  
+  .project-info {
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
+  
+  .project-info h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+  
+  .project-info p {
+    margin-bottom: 0;
+  }
+  
+
+  /* Estilos para el recuadro principal */
+.projects {
+    position: relative; /* Añadimos posición relativa para permitir el posicionamiento absoluto del pseudo-elemento */
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ocultamos el desbordamiento para que la línea neon no se vea fuera del recuadro */
+  }
+  
+  /* Estilos para la línea neon */
+  .projects::before {
+    content: ''; /* Agregamos contenido vacío para crear el pseudo-elemento */
+    position: absolute;
+    top: -2px; /* Desplazamos la línea 2px hacia arriba para que se vea dentro del recuadro */
+    left: -2px; /* Desplazamos la línea 2px hacia la izquierda para que se vea dentro del recuadro */
+    width: calc(100% + 4px); /* Ajustamos el ancho para cubrir todo el contorno del recuadro */
+    height: calc(100% + 4px); /* Ajustamos el alto para cubrir todo el contorno del recuadro */
+    border: 2px solid transparent; /* Establecemos un borde transparente */
+    border-radius: 12px; /* Ajustamos el radio para que coincida con el del recuadro */
+    pointer-events: none; /* Evitamos que el pseudo-elemento interfiera con los eventos del ratón */
+    animation: neonAnimation 2s linear infinite alternate; /* Aplicamos la animación a la línea neon */
+  }
+  
+  /* Animación de la línea neon */
+  @keyframes neonAnimation {
+    0% {
+      border-color: #61dafb; /* Color inicial de la línea (azul claro) */
+      box-shadow: 0 0 10px #61dafb; /* Añadimos un efecto de sombra para dar el efecto de neón */
+    }
+    100% {
+      border-color: #00ff00; /* Color final de la línea (verde) */
+      box-shadow: 0 0 20px #00ff00; /* Añadimos un efecto de sombra más fuerte para dar el efecto de neón */
+    }
+  }
+  

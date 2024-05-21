@@ -1,0 +1,98 @@
+#contact {
+    padding: 50px 20px;
+    background: #ffffff; /* Color de fondo */
+    color: #000000; /* Color del texto */
+    text-align: center;
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 800px;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden; /* Para que la animación no se salga del contorno */
+  }
+  
+  #contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 4px solid transparent; /* Línea más gruesa */
+    box-sizing: border-box;
+    animation: neon-border .6s linear infinite;
+    z-index: -1;
+  }
+  
+  @keyframes neon-border {
+    0% {
+      border-top: 4px solid #1808ac;
+      border-right: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-left: 4px solid transparent;
+    }
+    25% {
+      border-top: 4px solid #1808ac;
+      border-right: 4px solid #1808ac;
+      border-bottom: 4px solid transparent;
+      border-left: 4px solid transparent;
+    }
+    50% {
+      border-top: 4px solid transparent;
+      border-right: 4px solid #1808ac;
+      border-bottom: 4px solid #1808ac;
+      border-left: 4px solid transparent;
+    }
+    75% {
+      border-top: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-bottom: 4px solid #1808ac;
+      border-left: 4px solid #1808ac;
+    }
+    100% {
+      border-top: 4px solid #1808ac;
+      border-right: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-left: 4px solid #1808ac;
+    }
+  }
+  
+  #contact:hover {
+    transform: scale(1.05);
+  }
+  
+  #contact h2 {
+    font-size: 3em; /* Tamaño de letra más grande */
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out;
+  }
+  
+  .contact-info {
+    font-size: 5em; /* Tamaño de letra más grande */
+    line-height: 1.6;
+  }
+  
+  .contact-link {
+    color: #020202; /* Color de los enlaces */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .contact-link:hover {
+    color: #f39c12; /* Color de los enlaces al pasar el ratón */
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

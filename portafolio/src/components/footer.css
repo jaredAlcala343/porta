@@ -1,0 +1,19 @@
+/* src/components/footer.css */
+.footer {
+    background-color: #333; /* Mismo color de fondo que la navbar */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 15px 0;
+    position: static;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Sombra similar a la navbar */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    font-size: 1em; /* Tamaño de fuente */
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
